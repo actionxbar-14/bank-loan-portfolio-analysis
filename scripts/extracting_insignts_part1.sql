@@ -205,6 +205,9 @@ YEAR(issue_date) = 2021
 
 
 
+
+
+
 /*
 -----------------------------------------------
 4. Avg interest rate : 
@@ -263,11 +266,243 @@ YEAR(issue_date) = 2021
 
 
 
+
+
+
+
+
 /*
 -----------------------------------------------
 5.  Debt-to-Income Ratio (DTI)  : 
 -----------------------------------------------
 */
+
+
+
+-- Avg Debt-to-Income Ratio (DTI) :- 
+
+SELECT 
+     ROUND(AVG(dti) , 4) * 100 AS Avg_DTI 
+FROM bank_loan_data
+
+
+
+
+
+
+-- MTD(Month-to-date) Debt-to-Income Ratio (DTI) :- 
+
+SELECT 
+     ROUND(AVG(dti) , 4) * 100 AS MTD_Avg_DTI 
+FROM bank_loan_data
+WHERE MONTH(issue_date) = 12 AND
+YEAR(issue_date) = 2021
+
+
+
+
+-- PMTD(Month-to-date) Debt-to-Income Ratio (DTI) :- 
+
+
+SELECT 
+     ROUND(AVG(dti) , 4) * 100 AS MTD_Avg_DTI 
+FROM bank_loan_data
+WHERE MONTH(issue_date) = 11 AND
+YEAR(issue_date) = 2021
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-- ## Good Loan v Bad Loan KPI’s: 
+
+
+
+
+/*
+---------------------------------
+1. Good Loans : 
+---------------------------------
+*/
+
+SELECT   
+     *
+    -- loan_status 
+FROM bank_loan_data
+
+
+
+
+-- Good Loan Percentages :
+
+SELECT 
+      (COUNT (CASE WHEN loan_status = 'Fully Paid' OR loan_status = 'Current' THEN id END)) * 100
+      / 
+      COUNT(id) AS Good_loan_percentage 
+FROM bank_loan_data
+
+
+
+
+
+
+
+-- Good Loan Applications :
+
+
+SELECT    
+      COUNT(id) As Good_Loan_Applications 
+FROM bank_loan_data
+WHERE loan_status = 'Fully Paid' OR loan_status = 'Current'
+
+
+
+
+
+-- Good Loan Funded Amount :
+
+SELECT    
+      SUM(loan_amount) As Good_Loan_Funded_Amount
+FROM bank_loan_data
+WHERE loan_status = 'Fully Paid' OR loan_status = 'Current'
+
+
+
+
+
+
+
+-- Good Loan Received Amount :
+
+SELECT    
+      SUM(total_payment) As Good_Loan_Received_Amount
+FROM bank_loan_data
+WHERE loan_status = 'Fully Paid' OR loan_status = 'Current'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+---------------------------------
+2. Bad Loans : 
+---------------------------------
+*/
+
+
+
+
+
+
+
+SELECT   
+     *
+    -- loan_status 
+FROM bank_loan_data
+
+
+
+
+
+-- Bad Loan Percentages :
+
+
+SELECT 
+      (COUNT (CASE WHEN loan_status = 'Charged Off' THEN id END)  * 100.0)
+      / 
+      COUNT(id) AS Good_loan_percentage 
+FROM bank_loan_data
+
+
+
+
+
+-- Bad Loan Applications :
+
+SELECT    
+      COUNT(id) As Bad_Loan_Applications 
+FROM bank_loan_data
+WHERE loan_status = 'Charged Off'
+
+
+
+
+
+
+
+
+
+-- Bad Loan Funded Amount :
+
+SELECT    
+      SUM(loan_amount) As Bad_Loan_Funded_Amount
+FROM bank_loan_data
+WHERE loan_status = 'Charged Off'
+
+
+
+
+
+
+
+-- Bad Loan Received Amount :
+
+SELECT    
+      SUM(total_payment) As Good_Loan_Received_Amount
+FROM bank_loan_data
+WHERE loan_status = 'Charged Off'
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+-- ## Loan Status : 
 
 
 
