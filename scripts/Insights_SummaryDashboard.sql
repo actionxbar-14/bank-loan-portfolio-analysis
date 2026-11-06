@@ -495,14 +495,32 @@ WHERE loan_status = 'Charged Off'
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-
-
-
-
-
-
-
 -- ## Loan Status : 
+
+SELECT * FROM bank_loan_data
+
+
+-- Summary of the Loans 
+SELECT 
+     loan_status,
+     COUNT(id) As LoanCount,
+     SUM(total_payment) As Total_Amount_Recieved,
+     SUM(loan_amount) As Total_Funded_Amount,
+     SUM(int_rate * 100) As Interest_Rate,
+     SUM(dti * 100) As DTI
+FROM bank_loan_data
+GROUP BY loan_status
+
+
+
+-- Summary Of Loans With MTD 
+SELECT 
+     loan_status,
+     SUM(total_payment) As MTD_Total_Amount_Recieved,
+     SUM(loan_amount) As MTD_Total_Funded_Amount
+FROM bank_loan_data
+WHERE MONTH(issue_date) = 12
+GROUP BY loan_status
 
 
 
