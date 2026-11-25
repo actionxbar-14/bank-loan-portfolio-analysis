@@ -76,7 +76,8 @@ Provides a consolidated overview of the bank's lending performance and portfolio
 - Monthly lending trends.
 - Loan status distribution.
 
-![Loan Summary Dashboard](C:\Users\ANUBHAV\My_Projects\DA_Projects\Bank_Loan_Portfolio_Analysis\datasets\Dashboard_screenshots\Summary_Dashboard.png)
+
+ 
 
 ### 02. Loan Overview Dashboard
 
@@ -90,7 +91,7 @@ Provides deeper insights into loan distribution and borrower characteristics.
 - Loan applications by loan purpose.
 - Loan applications by home ownership.
 
-![Loan Overview Dashboard](C:\Users\ANUBHAV\My_Projects\DA_Projects\Bank_Loan_Portfolio_Analysis\datasets\Dashboard_screenshots\Overview_Dashboard.png)
+
 
 ### 03. Loan Details Dashboard
 
@@ -103,7 +104,7 @@ Provides a detailed view of individual loan records to support granular analysis
 - Interest rate and DTI.
 - Loan status and repayment information.
 
-![Loan Details Dashboard](C:\Users\ANUBHAV\My_Projects\DA_Projects\Bank_Loan_Portfolio_Analysis\datasets\Dashboard_screenshots\Details_Dashboard.png)
+
 
 ---
 
