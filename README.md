@@ -1,185 +1,281 @@
-﻿# Bank Loan Portfolio Analysis
+# BANK LOAN REPORT & RISK ANALYSIS DASHBOARD
 
-**An End-to-End Banking Analytics Project | SQL | Power BI**
+<img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/b53d8b45-e36a-471a-97b9-a0f8e4611d7b" />
+<img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/896d14d0-bc50-4dd6-9736-89277dc439fb" />
+<img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/a88c3933-b460-4658-894a-bde3437e53bf" />
 
-## 📊 Project Overview
+![Power Query](https://img.shields.io/badge/POWER_QUERY-ETL-5A3E85?style=for-the-badge)
+![Data Modeling](https://img.shields.io/badge/DATA_MODELING-Star_Schema-0078D4?style=for-the-badge)
 
-This project focuses on analysing a bank's loan portfolio to evaluate lending performance, loan distribution, repayment collections, and overall portfolio quality.
-
-The objective is to transform raw loan application data into meaningful business insights that help banking stakeholders understand lending trends, monitor loan performance, evaluate borrower characteristics, and identify potential credit portfolio concerns.
-
-An interactive Power BI dashboard provides a consolidated view of key lending metrics and supports data-driven business decision-making.
 
 ---
 
-## 🎯 Business Problem
 
-Banks process a large volume of loan applications across different borrower segments, loan purposes, employment categories, and geographical locations.
 
-Monitoring loan performance through raw datasets makes it difficult for management to identify lending trends, evaluate repayment performance, and assess portfolio quality.
 
-The business requires a centralized analytical solution to:
 
-- Monitor loan application volumes and lending activities.
-- Track total loan amounts funded and amounts received.
-- Evaluate loan repayment status and portfolio quality.
-- Identify patterns in borrower demographics and loan characteristics.
-- Compare lending performance across different periods.
-- Monitor financial indicators such as interest rates and Debt-to-Income (DTI) ratios.
 
-## 🎯 Project Objectives
 
-1. **Loan Performance Analysis:** Evaluate loan applications, funded amounts, and repayment collections.
-2. **Portfolio Quality Assessment:** Analyse good loans and bad loans based on loan status.
-3. **Borrower Segmentation:** Understand loan distribution across employment, home ownership, loan purpose, and geographical segments.
-4. **Trend Analysis:** Identify monthly and year-to-date changes in lending activities.
-5. **Financial Monitoring:** Evaluate average interest rates and Debt-to-Income ratios.
-6. **Business Intelligence:** Develop an interactive dashboard for monitoring lending performance and portfolio health.
 
----
 
-## 📈 Key Performance Indicators (KPIs)
+
+
+
+## ◈ PROJECT OVERVIEW
+
+The **Bank Loan Report & Risk Analysis Dashboard** is an interactive Business Intelligence project developed using Microsoft Power BI to analyze banking loan operations, loan applications, funded amounts, repayments, and portfolio performance.
+
+The primary objective of this project is to transform raw financial loan data into meaningful business insights that help stakeholders monitor lending activities, evaluate loan quality, and understand repayment performance.
+
+The dashboard provides a consolidated view of key financial metrics through interactive visualizations, KPI cards, analytical reports, and dynamic filters.
+
+
+
+
+
+
+
+
+
+
+
+
+## ⌖ BUSINESS OBJECTIVES
+
+The project focuses on answering important business questions related to banking and loan operations:
+
+- How many loan applications have been received?
+- What is the total amount funded by the bank?
+- How much loan amount has been received back?
+- What percentage of loans are classified as Good Loans and Bad Loans?
+- Which loan purposes contribute the most to loan applications?
+- How do loan applications vary across different time periods?
+- Which borrower segments contribute to higher loan exposure?
+- How do interest rates and Debt-to-Income ratios vary across the loan portfolio?
+
+
+
+
+
+
+
+
+
+## ▦ KEY PERFORMANCE INDICATORS (KPIs)
+
+The dashboard tracks the following key business metrics:
 
 | KPI | Business Definition |
 |---|---|
-| Total Loan Applications | Total number of loan applications received. |
-| Total Funded Amount | Total amount disbursed by the bank. |
-| Total Amount Received | Total repayments collected from borrowers. |
-| Average Interest Rate | Average interest rate charged on loans. |
-| Average DTI | Average Debt-to-Income ratio of borrowers. |
-| Good Loan Applications | Applications classified as Fully Paid or Current. |
-| Bad Loan Applications | Applications classified as Charged Off. |
-| Good Loan Funded Amount | Total funded amount associated with good loans. |
-| Bad Loan Funded Amount | Total funded amount associated with bad loans. |
-| Good Loan Received Amount | Total amount received from good loans. |
-| Bad Loan Received Amount | Total amount received from bad loans. |
+| Total Loan Applications | Measures the overall volume of loan applications. |
+| Total Funded Amount | Measures the total capital disbursed by the bank. |
+| Total Amount Received | Tracks the amount of loan repayments received. |
+| Average Interest Rate | Measures the average interest rate across loans. |
+| Average DTI | Evaluates borrowers' debt obligations relative to their income. |
+| Good Loan % | Measures the proportion of loans classified as good. |
+| Bad Loan % | Measures the proportion of loans classified as bad. |
+| Good Loan Applications | Counts applications classified as good loans. |
+| Bad Loan Applications | Counts applications classified as bad loans. |
+| Bad Loan Funded Amount | Tracks the amount funded under bad loan accounts. |
+| Bad Loan Received Amount | Tracks repayments received from bad loan accounts. |
 
-*Note: Good and bad loan classifications follow the business definitions used in this project.*
 
----
 
-## 📊 Dashboard Overview
 
-The Power BI dashboard consists of three analytical views designed to provide insights into the bank's lending operations.
 
-### 01. Loan Summary Dashboard
 
-Provides a consolidated overview of the bank's lending performance and portfolio quality.
+
+
+
+## ▥ DASHBOARD MODULES
+
+
+
+
+
+### 01. General Loan Overview
+
+Provides a high-level summary of the bank's lending operations and overall loan portfolio.
 
 **Key Analysis:**
-- Total Loan Applications.
-- Total Funded Amount.
-- Total Amount Received.
-- Average Interest Rate.
-- Average DTI.
-- Good Loan vs Bad Loan performance.
-- Monthly lending trends.
+- Total loan applications, funded amount, and received amount.
+- Monthly loan application trends.
+- Good Loan vs. Bad Loan distribution.
+- Loan distribution by purpose and borrower characteristics.
+- Loan portfolio performance across different categories.
+
+
+
+
+
+### 02. Loan Performance Analysis
+
+Focuses on evaluating the quality and repayment performance of the loan portfolio.
+
+**Key Analysis:**
+- Good Loan and Bad Loan classification.
 - Loan status distribution.
-
-
- 
-
-### 02. Loan Overview Dashboard
-
-Provides deeper insights into loan distribution and borrower characteristics.
-
-**Key Analysis:**
-- Loan applications by month.
-- Loan distribution by state.
-- Loan applications by term.
-- Loan applications by employment length.
-- Loan applications by loan purpose.
-- Loan applications by home ownership.
+- Funded amount and received amount comparison.
+- Analysis of loan repayment performance.
+- Identification of potentially higher-risk loan segments.
 
 
 
-### 03. Loan Details Dashboard
-
-Provides a detailed view of individual loan records to support granular analysis and investigation.
-
-**Key Analysis:**
-- Individual loan information.
-- Borrower details.
-- Loan amount and funded amount.
-- Interest rate and DTI.
-- Loan status and repayment information.
 
 
 
----
 
-## 📉 Analytical Dimensions
+## ƒ DATA ANALYSIS & DAX MEASURES
 
-The project explores loan performance across the following dimensions:
+DAX (Data Analysis Expressions) was used to develop calculated measures for business performance monitoring and dynamic reporting.
 
-- **Loan Status:** Fully Paid, Current, Charged Off.
-- **Loan Purpose:** Debt Consolidation, Credit Card, Home Improvement, and other purposes.
-- **Employment Length:** Borrower employment experience.
-- **Home Ownership:** Borrower housing status.
-- **Geography:** Loan distribution across states.
-- **Loan Term:** Short-term and long-term lending.
-- **Time Period:** Monthly and year-to-date performance.
+**Major Analytical Measures:**
 
----
+- Total Loan Applications
+- Total Funded Amount
+- Total Amount Received
+- Average Interest Rate
+- Average Debt-to-Income Ratio (DTI)
+- Good Loan Applications
+- Bad Loan Applications
+- Good Loan Percentage
+- Bad Loan Percentage
+- Good Loan Funded Amount
+- Bad Loan Funded Amount
+- Good Loan Received Amount
+- Bad Loan Received Amount
 
-## 🧮 Tools & Technologies
+These measures enable dynamic calculations and respond to dashboard filters and slicers.
 
-| Technology | Purpose |
-|------------|---------|
-| Microsoft Power BI | Interactive dashboard development and visualization |
+
+
+
+
+
+
+## ⌘ DATA MODELLING
+
+A **Star Schema data model** was implemented to organize the loan dataset into structured fact and dimension tables.
+
+The model separates transactional loan information from descriptive borrower, loan, and date attributes.
+
+**Data Model Components:**
+
+| Table | Purpose |
+|---|---|
+| Fact Loan | Stores loan-related transactional information and numerical measures. |
+| Dim Borrower | Contains borrower-related descriptive attributes. |
+| Dim Loan | Contains loan classification and descriptive information. |
+| Dim Date | Supports time-based analysis and date filtering. |
+
+**Benefits of Star Schema:**
+- Improves data organization.
+- Simplifies analytical queries.
+- Establishes meaningful relationships between tables.
+- Supports efficient filtering and reporting.
+- Improves maintainability of the data model.
+
+## ⚙ TECHNOLOGY STACK
+
+| Technology | Application |
+|---|---|
+| Microsoft SQL Server | Query Analysis |
+| Microsoft Power BI | Dashboard development and data visualization |
 | Power Query | Data cleaning and transformation |
-| DAX | KPI calculations and analytical measures |
-| Microsoft Excel / CSV | Dataset storage and initial data exploration |
+| DAX | Calculated measures and business KPIs |
+| Data Modelling | Star Schema design and table relationships |
+| Microsoft Excel / CSV | Source dataset |
 
----
+## ⟳ PROJECT WORKFLOW
 
-## 🗂️ Project Structure
+The project followed a structured data analytics workflow:
+
+**01 — Data Collection**
+
+Imported the raw financial loan dataset into Power BI.
+
+**02 — Data Cleaning & Transformation**
+
+Examined the dataset and performed necessary data cleaning and transformations using Power Query.
+
+**03 — Data Modelling**
+
+Designed a Star Schema with fact and dimension tables and established relationships between them.
+
+**04 — DAX Development**
+
+Created calculated measures to evaluate loan performance and business KPIs.
+
+**05 — Dashboard Development**
+
+Designed interactive dashboards using KPI cards, charts, tables, and slicers.
+
+**06 — Business Analysis**
+
+Analyzed lending trends, loan quality, repayment performance, and borrower-related patterns.
+
+## ▧ DASHBOARD PREVIEW
+
+### Summary Dashboard
+
+![Loan Performance Dashboard](C:\Users\ANUBHAV\My_Projects\DA_Projects\Bank_Loan_Portfolio_Analysis\datasets\Dashboard_screenshots\Summary_Dashboard.png)
+
+
+### Loan Performance Analysis
+
+![Loan Performance Dashboard](Dashboard_Images/Loan_Performance.png)
+
+## ↗ BUSINESS VALUE & KEY TAKEAWAYS
+
+This project demonstrates how raw banking data can be transformed into an interactive Business Intelligence solution.
+
+The dashboard enables stakeholders to:
+
+- Monitor overall loan portfolio performance.
+- Evaluate the distribution of good and bad loans.
+- Track loan disbursement and repayment amounts.
+- Analyze borrower and loan-related trends.
+- Identify loan segments that may require further risk assessment.
+- Support data-driven lending and portfolio monitoring decisions.
+
+## ⌁ REPOSITORY STRUCTURE
 
 ```text
-Bank_Loan_Portfolio_Analysis/
+Bank-Loan-Report-Summary/
 │
-├── Dashboard/
-│   └── Bank_Loan_Analysis.pbix
+│
+├── dashboard/
+│   ├── BankingLoan_Dashboard.pbix
 |
-├── Dataset/
-│   └── Domain_Knowledge.docx
-│   └── financial_loan_data_excel.xlsx
+|
+|
+├── datasets/
+│   ├── Dashboard_screenshots
+│   └── domain_knowledge.docx
+|   └── financial_loan_data.excel
 |   └── financial_loan.csv
-|   └── loan_Analysis_Queries.csv
-|   └── Terminologies_description_of_data.csv
+|   └── Loan_Analysis_Queries.docx
+|   └── Terminologies_description_of_data.docx
 |
+│
 ├── scripts/
-│   ├── Insights_OverviewDashboard.sql
-│   ├── Insights_SummaryDashboard.sql
-│   
+│   └── Insights_OverViewDashboard.sql
+|   └── Insights_SummaryDashboard.sql 
 │
 └── README.md
 ```
 
----
-
-## 💹 Expected Business Outcomes
-
-This analysis aims to help banking stakeholders:
-
-- Understand overall lending demand and loan disbursement patterns.
-- Monitor repayment collections against funded amounts.
-- Evaluate portfolio composition through loan status analysis.
-- Identify borrower segments contributing to lending activities.
-- Track changes in loan applications and financial KPIs over time.
-- Support more informed lending and portfolio monitoring decisions.
-
----
-
-## 👨‍💻 Author
+## ◉ AUTHOR
 
 **Anubhav Pathak**
 
-Data Analyst | Analytics Engineer | 
+Data Analyst | Aspiring Data Engineer
 
-- GitHub: [actionxbar-14](https://github.com/actionxbar-14)
-- Linkdin : [Profile](https://www.linkedin.com/in/anubhav-pathak-81a229334/)
+**Technical Interests:** Data Analytics | Business Intelligence | SQL | Python | Data Engineering
+
+- GitHub: https://github.com/actionxbar-14
+- LinkedIn: [Add LinkedIn Profile URL]
 
 ---
 
-*This project is part of my Data Analytics portfolio, focusing on practical business problems and data-driven decision-making in the Banking and Financial Services domain.*
+*This project was developed as part of my Data Analytics learning journey, focusing on practical business analysis, financial data interpretation, data modelling, and interactive dashboard development.*
