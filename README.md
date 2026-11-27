@@ -242,16 +242,7 @@ Designed interactive dashboards using KPI cards, charts, tables, and slicers.
 
 Analyzed lending trends, loan quality, repayment performance, and borrower-related patterns.
 
-## ▧ DASHBOARD PREVIEW
 
-### Summary Dashboard
-
-![Loan Performance Dashboard](C:\Users\ANUBHAV\My_Projects\DA_Projects\Bank_Loan_Portfolio_Analysis\datasets\Dashboard_screenshots\Summary_Dashboard.png)
-
-
-### Loan Performance Analysis
-
-![Loan Performance Dashboard](Dashboard_Images/Loan_Performance.png)
 
 ## ↗ BUSINESS VALUE & KEY TAKEAWAYS
 
@@ -302,7 +293,7 @@ Data Analyst | Aspiring Data Engineer
 **Technical Interests:** Data Analytics | Business Intelligence | SQL | Python | Data Engineering
 
 - GitHub: https://github.com/actionxbar-14
-- LinkedIn: [Add LinkedIn Profile URL]
+- LinkedIn: https://www.linkedin.com/in/anubhav-pathak-81a229334/
 
 ---
 
