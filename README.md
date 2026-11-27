@@ -106,11 +106,7 @@ Provides a high-level summary of the bank's lending operations and overall loan 
 
 
 
-![Summary_Dashboard]()
-
-
-
-
+![Loan Summary Dashboard](datasets/Dashboard_screenshots/Summary_Dashboard.png)
 
 
 
@@ -127,7 +123,7 @@ Focuses on evaluating the quality and repayment performance of the loan portfoli
 - Analysis of loan repayment performance.
 - Identification of potentially higher-risk loan segments.
 
-![Loan Overview Dashboard](Dataset/Dashboard_screenshots/Loan_Performance.png)
+![Loan Overview Dashboard](datasets/Dashboard_screenshots/Overview_Dashboard.png)
 
 
 
@@ -148,8 +144,8 @@ Focuses on evaluating the Overall Details of the loan portfolio.
   8. Sum of Installment Amount
   9. Total Amount Received
 
+![Loan Details Dashboard](datasets/Dashboard_screenshots/Details_Dashboard.png)
 
-![Loan Details Dashboard](Dataset/Dashboard_screenshots/Loan_Performance.png)
 
 
 
