@@ -93,7 +93,7 @@ The dashboard tracks the following key business metrics:
 
 
 
-### 01. General Loan Overview
+### 01. Loan Summary Dashboard
 
 Provides a high-level summary of the bank's lending operations and overall loan portfolio.
 
@@ -106,9 +106,17 @@ Provides a high-level summary of the bank's lending operations and overall loan 
 
 
 
+![Summary_Dashboard]()
 
 
-### 02. Loan Performance Analysis
+
+
+
+
+
+
+
+### 02. Loan Overview Dashboard
 
 Focuses on evaluating the quality and repayment performance of the loan portfolio.
 
@@ -118,6 +126,30 @@ Focuses on evaluating the quality and repayment performance of the loan portfoli
 - Funded amount and received amount comparison.
 - Analysis of loan repayment performance.
 - Identification of potentially higher-risk loan segments.
+
+![Loan Overview Dashboard](Dataset/Dashboard_screenshots/Loan_Performance.png)
+
+
+
+
+### 03. Loan Details Dashboard
+
+Focuses on evaluating the Overall Details of the loan portfolio.
+
+**Key Analysis:**
+- Overall Details Table Including :
+  1. loan_id
+  2. loan_purpose
+  3. home_ownership
+  4. loan_grade
+  5. loan_sub_grade
+  6. issue_date_key
+  7. Total Funded Amount
+  8. Sum of Installment Amount
+  9. Total Amount Received
+
+
+![Loan Details Dashboard](Dataset/Dashboard_screenshots/Loan_Performance.png)
 
 
 
